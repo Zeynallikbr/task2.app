@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\bin\Debug\net8.0\Emekhaqqi.app.exe
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\bin\Debug\net8.0\Emekhaqqi.app.deps.json
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\bin\Debug\net8.0\Emekhaqqi.app.runtimeconfig.json
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\bin\Debug\net8.0\Emekhaqqi.app.dll
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\bin\Debug\net8.0\Emekhaqqi.app.pdb
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\obj\Debug\net8.0\Emekhaqqi.app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\obj\Debug\net8.0\Emekhaqqi.app.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\obj\Debug\net8.0\Emekhaqqi.app.AssemblyInfo.cs
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\obj\Debug\net8.0\Emekhaqqi.app.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\obj\Debug\net8.0\Emekhaqqi.app.dll
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\obj\Debug\net8.0\refint\Emekhaqqi.app.dll
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\obj\Debug\net8.0\Emekhaqqi.app.pdb
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\obj\Debug\net8.0\Emekhaqqi.app.genruntimeconfig.cache
+C:\Users\Admin\Desktop\C#\Home.task2\Emekhaqqi.app\obj\Debug\net8.0\ref\Emekhaqqi.app.dll
