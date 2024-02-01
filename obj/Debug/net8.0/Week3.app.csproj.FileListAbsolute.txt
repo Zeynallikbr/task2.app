@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\bin\Debug\net8.0\Week3.app.exe
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\bin\Debug\net8.0\Week3.app.deps.json
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\bin\Debug\net8.0\Week3.app.runtimeconfig.json
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\bin\Debug\net8.0\Week3.app.dll
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\bin\Debug\net8.0\Week3.app.pdb
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\obj\Debug\net8.0\Week3.app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\obj\Debug\net8.0\Week3.app.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\obj\Debug\net8.0\Week3.app.AssemblyInfo.cs
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\obj\Debug\net8.0\Week3.app.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\obj\Debug\net8.0\Week3.app.dll
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\obj\Debug\net8.0\refint\Week3.app.dll
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\obj\Debug\net8.0\Week3.app.pdb
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\obj\Debug\net8.0\Week3.app.genruntimeconfig.cache
+C:\Users\Admin\Desktop\C#(gencay yiliz)\Week3.app\obj\Debug\net8.0\ref\Week3.app.dll
