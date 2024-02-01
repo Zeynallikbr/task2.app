@@ -1,7 +1,4 @@
-﻿using System;
-using System.Net.NetworkInformation;
-
-namespace Emekhaqqi.app
+﻿namespace Week3.app
 {
     internal class Program
     {
@@ -9,7 +6,7 @@ namespace Emekhaqqi.app
         {
             //Ümumi emek haqqı:
             Console.WriteLine("Ümumi emek haqqı (tam eded)");
-            float totalWages = int.Parse(Console.ReadLine());
+            float totalWages = float.Parse(Console.ReadLine());
 
             //Ailə vəziyyəti:
             Console.WriteLine("Ailə vəziyyəti (e / E: evli, s / S: subay, d / D: dul)");
@@ -34,7 +31,7 @@ namespace Emekhaqqi.app
             //Uşaqların sayı:
             Console.WriteLine("Uşaqların sayı (subaydırsa, bu məlumatlar daxil edilməməlidir)(YOXDURSA 0 GIRIN)");
             int numberOfChildren = int.Parse(Console.ReadLine());
-            if (numberOfChildren > 1)
+            if (numberOfChildren >= 1)
             {
                 Console.WriteLine($" {numberOfChildren}-usagi var");
             }
@@ -58,68 +55,77 @@ namespace Emekhaqqi.app
                 Console.WriteLine("yeniden girin");
                 return;
             }
-            //evli ve usaq muavinbeti,
-            float maritialSupport = 0;//evlilik dəstəyi
-            float childSupport = 0;//uşaq dəstəyi
+            //aile yardmilari-muavineti
+            float familyAllowance = 0;
             if (maritalStatus == "e" || maritalStatus == "E")
             {
-                maritialSupport = 50;
-
-                if (numberOfChildren == 1)
-                {
-                    childSupport = 30;
-                }
-                else if (numberOfChildren == 2)
-                {
-                    childSupport = (childSupport + 25);
-                }
-                else if (numberOfChildren == 3)
-                {
-                    childSupport = (childSupport + 20);
-                }
-                else
-                {
-                    childSupport += 15;
-                }
-               
+                familyAllowance = 50;
             }
-            else if (maritalStatus == "d" || maritalStatus == "D")
+            // usaq müavinəti
+            double usaqMuvafiqeti = 0;
+            if ((maritalStatus == "e" || maritalStatus == "E") || (maritalStatus == "d" || maritalStatus == "D"))
             {
-                maritialSupport = 50;
-
-                if (numberOfChildren == 1)
+                for (int i = 1; i <= numberOfChildren; i++)
                 {
-                    childSupport = 30;
-                }
-                else if (numberOfChildren == 2)
-                {
-                    childSupport = (childSupport + 25);
-                }
-                else if (numberOfChildren == 3)
-                {
-                    childSupport = (childSupport + 20);
-                }
-                else
-                {
-                    childSupport += 15;
+                    if (i == 1)
+                    {
+                        usaqMuvafiqeti += 30;
+                    }
+                    else if (i == 2)
+                    {
+                        usaqMuvafiqeti += 25;
+                    }
+                    else if (i == 3)
+                    {
+                        usaqMuvafiqeti += 20;
+                    }
+                    else
+                    {
+                        usaqMuvafiqeti += 15;
+                    }
                 }
             }
-            //else if (maritalStatus == "e" && numberOfChildren > 0)
+            double taxRange = 0;//vergi derecesi
+            double taxAmount = 0;//vergi miqdari
+            taxAmount = totalWages * taxRange;
+            if (totalWages <= 1000)
+            {
+                taxRange = 0.15;
+            }
+            else if (totalWages > 1000 && totalWages <= 2000)
+            {
+                taxRange = 0.2;
+            }
+            else if (totalWages > 2000 && totalWages < 3000)
+            {
+                taxRange = 0.25;
+            }
+            else
+            {
+                taxRange = 0.3;
+            }
+            if (disabledPerson == "b" || disabledPerson == "B")
+            {
+                taxRange *= 0.5;//eliler ucun 50% endrim
+            }
 
+            Console.WriteLine($"ailə müavinəti :{familyAllowance}-AZN");
+            Console.WriteLine($"uşaq pulu :{usaqMuvafiqeti}-AZN");
+            Console.WriteLine($"gəlir vergisi dərəcəsi :{taxRange * 100}%");
+            Console.WriteLine($"gəlir vergisinin məbləği :{taxAmount}-AZN");
+            Console.WriteLine($"ümumi əmək haqqı :{totalWages}-AZN");
+            Console.WriteLine($"xalis əmək haqqı :{totalWages + familyAllowance + usaqMuvafiqeti - taxAmount}-AZN");
 
+            // Pul vahidləri
+            int[] unitsOfMoney = { 200, 100, 50, 20, 10, 5, 1 };
+            //  xalis əmək haqqı məbləği ən yaxın tam ədədə qədər yuvarlaqlaşdırılmis formasi
+            foreach (int money in unitsOfMoney)
+            {
+                int pulSayi = (int)(totalWages / money);
+                totalWages %= money;
 
-
-
-
-
-
-
-
-
-            Console.WriteLine("Net maas:" + totalWages);
-            Console.WriteLine("Aile veziyeti: " + maritalStatus);
-            Console.WriteLine("Uşaqların sayı: " + numberOfChildren);
-            Console.WriteLine("Əlil olub-olmaması: " + disabledPerson);
+                Console.WriteLine($"{money} AZN pulundan {pulSayi} vahid");
+            }
         }
     }
 }
